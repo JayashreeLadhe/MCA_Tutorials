@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Languages_Compiler</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css_files/style.css">
+
+    <link rel="stylesheet" href="css_files/HTML.css">
+
+    <link rel="stylesheet" href="css_files/php.css">
+
+    <!-- icons style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- fa fa-caret-right  -->
+
+    <!-- Bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="compiler/codemirror/codemirror-5.65.14/lib/codemirror.css">
+    <script src="compiler/codemirror/codemirror-5.65.14/lib/codemirror.js"></script>
+
+    <!-- clike link -->
+    <script src="compiler/codemirror/codemirror-5.65.14/mode/clike/clike.js"></script>
+
+    <!-- theme link -->
+    <link rel="stylesheet" href="compiler/codemirror/codemirror-5.65.14/theme/dracula.css">
+
+    <!-- addOn tags -->
+    <script src="compiler/codemirror/codemirror-5.65.14/addon/edit/closebrackets.js"></script>
+
+    <!-- icon link bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- SIDEBAR INFORMATION -->
+        <div class="sidenav">
+            <!-- Home -->
+            <div class="dropdown"><a href="index.html"><i class="fa fa-home" ></i> Home </a> </div>
+            <!-- <div class="mianTag"><a href="index.html"><i class="fa fa-home"></i> Home </a></div> -->
+            
+            
+            <!-- HTML -->
+            <button class="dropdown-btn"><i class="fa fa-html5"></i> HTML
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="HTML.html">Learnig</a>
+                <a href="HTML_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- CSS -->
+            <button class="dropdown-btn"><i class="fab fa-css3"></i> CSS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="CSS.html">Learnig</a>
+                <a href="CSS_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- PHP -->
+            <button class="dropdown-btn"><i class='fab fa-java'></i> JAVA 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="Java.html">Learnig</a>
+                <a href="Lang_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- Bootstrap -->
+            <button class="dropdown-btn"><i class="fa-brands fa-bootstrap"></i> Bootstrap 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="bootstrap.html">Learnig</a>
+                <a href="Bootstrap_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- script File -->
+            <script src="index.js"></script>
+
+        </div>
+
+
+
+        <!-- <input type="checkbox" name="" id="check"> -->
+      
+
+
+        <div class="main-phpCompiler">
+            <div class="row m-3">
+                <div class="col">
+                    <div class="d-flex justify-content-between mb-2 bg-dark rounded p-2">
+                        <div class="col-12 w-25">
+                            <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                            <select class="form-select" id="inlineFormSelectPref">
+                                <option selected>Choose...</option>
+                                <option value="Java">Java</option>
+                                <option value="Cpp">Cpp</option>
+                                <option value="Python">Python</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-success">Coding Sprint</button>
+                            <button type="button" id="run" class="btn btn-success"><i
+                                    class="bi bi-play-fill"></i></button>
+                        </div>
+                    </div>
+                    <textarea type="text" id="editor" class="form-control" aria-label="First name"></textarea>
+                </div>
+                <div class="col d-flex flex-column rounded bg-dark px-4">
+                    <div class="h-50">
+                        <label for="Input" class="text-light mt-4 mb-2">Input</label>
+                        <textarea type="text" id="input" class="form-control h-75" aria-label="Last name"></textarea>
+                    </div>
+                    <div class="h-50">
+                        <label for="Output" class="text-light mb-2">Output</label>
+                        <textarea type="text" id="output" class="form-control h-75" aria-label="Last name"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+                mode: "text/x-c++src",
+                theme: "dracula",
+                lineNumbers: true,
+                autoCloseBrackets: true,
+
+            })
+            var width = window.innerWidth
+            var input = document.getElementById("input")
+            var output = document.getElementById("output")
+            var run = document.getElementById("run")
+            editor.setSize(0.7 * width, "500")
+            var option = document.getElementById("inlineFormSelectPref")
+            option.addEventListener("change", function () {
+                if (option.value == "Java") {
+                    editor.setOption("mode", "text/x-java")
+                }
+                else if (option.value == "python") {
+                    editor.setOption("mode", "text/x-python")
+                }
+                else {
+                    editor.setOption("mode", "text/x-c++src")
+                }
+            })
+            var code;
+            run.addEventListener("click", async function () {
+                code = {
+                    code: editor.getValue(),
+                    input: input.value,
+                    lang: option.value
+                }
+                console.log(code)
+                var oData = await fetch("http://localhost:8000/compile", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(code)
+                })
+                var d = await oData.json()
+                output.value = d.output
+            })
+        </script>
+
+</html>

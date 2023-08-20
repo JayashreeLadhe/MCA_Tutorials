@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_Tutorials</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css_files/style.css">
+
+    <link rel="stylesheet" href="css_files/HTML.css">
+
+    <!-- icons style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- fa fa-caret-right  -->
+
+    <!-- Bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- SIDEBAR INFORMATION -->
+        <div class="sidenav">
+            <!-- Home -->
+            <div class="dropdown"><a href="index.html"><i class="fa fa-home" ></i> Home </a> </div>
+            <!-- <div class="mianTag"><a href="index.html"><i class="fa fa-home"></i> Home </a></div> -->
+            
+            
+            <!-- HTML -->
+            <button class="dropdown-btn"><i class="fa fa-html5"></i> HTML
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="HTML.html">Learnig</a>
+                <a href="HTML_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- CSS -->
+            <button class="dropdown-btn"><i class="fab fa-css3"></i> CSS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="CSS.html">Learnig</a>
+                <a href="CSS_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- PHP -->
+            <button class="dropdown-btn"><i class='fab fa-java'></i> JAVA 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="Java.html">Learnig</a>
+                <a href="Lang_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- Bootstrap -->
+            <button class="dropdown-btn"><i class="fa-brands fa-bootstrap"></i> Bootstrap 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="bootstrap.html">Learnig</a>
+                <a href="Bootstrap_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- script File -->
+            <script src="index.js"></script>
+
+        </div>
+
+
+        <!-- CSS - Right side SIDEBAR -->
+        <div class="rightSidenav">
+            <header>
+                <h2>CSS Tutorial</h2>
+            </header>
+
+            <div class="sub-point">
+
+                <a href="#point1" class="btn">1. Introduction </a> <br />
+                <a href="#point2" class="btn">2. Syntax </a> <br />
+                <a href="#point3" class="btn">3. Selectors </a> <br />
+                <a href="#point4" class="btn">4. Comments </a> <br />
+                <a href="#point5" class="btn">5. Padding</a> <br />
+
+                </ul>
+            </div>
+
+        </div>
+        
+
+        <div class="main-html">
+            <marquee>
+                <h1> Learn CSS </h1>
+            </marquee>
+
+            <!-- Topic 1 -->
+            <div class="section1" id="point1">
+                <h3> Introduction : </h3>
+                <h4> What is CSS? </h4>
+
+                <p>
+                    CSS, often known as cascading style sheets, is a key web development tool that gives designers and
+                    developers complete control over how web pages look. In order to specify how items should be shown on a
+                    website, CSS works in tandem with HTML (Hypertext Markup Language). This includes things like layout,
+                    colours, fonts, spacing, and more. CSS enables the production of consistent and aesthetically pleasing
+                    websites across various devices and screen sizes by separating content from design. Because of its
+                    adaptability and cascading nature, CSS offers fine control over the aesthetics of web content, enhancing
+                    user experiences and supporting cutting-edge, responsive web design techniques.
+                </p>
+
+                <h4>Example :-</h4><br />
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        &lt;!DOCTYPE html&gt; <br />
+                        &lt;html&gt; <br />
+                        &lt;head&gt; <br />
+                        &lt;style&gt; <br />
+                        body { <br />
+                            &emsp;background-color: lightblue; <br />
+                        } <br /><br />
+
+                        h1 { <br />
+                            &emsp;color: white; <br />
+                            &emsp;text-align: center;<br />
+                        } <br /><br />
+
+                        p { <br />
+                            &emsp;font-family: verdana; <br />
+                            &emsp;font-size: 20px; <br />
+                        } <br />
+                        &lt;/style&gt; <br /> 
+                        &lt;head&gt; <br /> <br />
+                        &lt;body&gt; <br /> 
+                            &emsp; &lt;h1&gt;
+                                My First CSS Example
+                            &lt;/h1&gt; <br />
+
+                            &emsp; &lt;p&gt;
+                                This is a paragraph.
+                            &lt;/p&gt; <br />
+                        &lt;/body&gt; <br />
+                        &lt;/html&gt; <br />
+                    </div>
+                </div>
+
+                <br/>
+                <h4>CSS Solved a Big Problem</h4>
+                <p>HTML WAS NEVER INTENDED to have tags for web page layout!</p>
+
+                <p>HTML was developed to define a web page's content, such as:</p>
+
+                <p>&lt;This is a heading&gt; </p>
+                <p>&lt;This is a paragraph.&gt; </p>
+
+                <p>When tags like &lt;font&gt;, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+
+                <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+                    
+                <p>CSS removed the style formatting from the HTML page!</p>
+
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="section2" id="point2">
+                <br/><h3> CSS Syntax : </h3>
+                <p>The selector points to the HTML element you want to style.</p>
+                <p>The declaration block contains one or more declarations separated by semicolons.</p>
+                <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+                <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+                <h4>Example :</h4>
+                <p>In this example all &lt;p&gt; elements will be center-aligned, with a red text color:</p>
+
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        &lt;!DOCTYPE html&gt; <br />
+                        &lt;html&gt; <br />
+                        &lt;head&gt; <br />
+                        &lt;style&gt; <br />
+                        p { <br />
+                            &emsp;color: red; <br />
+                            &emsp;text-align: center; <br />
+                        } <br />
+                        &lt;/style&gt; <br /> 
+                        &lt;head&gt; <br /> <br />
+
+                        &lt;body&gt; <br /> 
+                            &emsp; &lt;h1&gt;
+                                My First CSS Example
+                            &lt;/h1&gt; <br />
+
+                            &emsp; &lt;p&gt;
+                                This is a paragraph.
+                            &lt;p&gt; <br />
+                        &lt;/body&gt; <br />
+                        &lt;/html&gt; <br />
+                    </div>
+                </div>
+                
+                <h4>Example Explained :</h4>
+                <ul>
+                    <li><span>p is a selector in CSS (it points to the HTML element you want to style: &lt;p&gt;).
+                    </span></li>
+                    <li><span>color is a property, and red is the property value</span></li>
+                    <li><span>text-align is a property, and center is the property value</span></li>
+                </ul>
+
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="section3" id="point3">
+                <br/><h3>CSS Selectors :</h3>
+                <p>To "find" (or choose) the HTML components you wish to style, CSS selectors are employed.</p>
+                <p>CSS selectors can be categorised into one of five groups:</p>
+
+                <ul>
+                    <li><span>Select components using simple selectors (based on name, id, and class)</span></li>
+                    <li><span>Combinator selectors (which choose components depending on how closely they are related to one another)</span></li>
+                    <li><span>Elements can be chosen using pseudo-class selectors depending on a certain state.</span></li>
+                    <li><span>Selecting and styling pseudo-elements (a portion of an element)</span></li>
+                    <li><span>Elements can be chosen based on an attribute or attribute value using attribute selectors.</span></li>
+                </ul>
+
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        &lt;!DOCTYPE html&gt; <br />
+                        &lt;html&gt; <br />
+                        &lt;head&gt; <br />
+                        &lt;style&gt; <br />
+                            &lt;!-- The CSS element Selector :-  --&gt; <br />
+                                p { <br />
+                                    &emsp;text-align: center; <br />
+                                    &emsp;color: red; <br />
+                                } <br />  <br />
+
+                            &lt;!-- The CSS id Selector :-  --&gt; <br />
+                                #para1 {  <br />
+                                    &emsp;text-align: center;  <br />
+                                    &emsp;color: red;  <br />
+                                }  <br /> <br/>
+
+                            &lt;!-- The CSS class Selector :-  --&gt; <br />
+                                .center { <br />
+                                    &emsp;text-align: center;  <br />
+                                    &emsp;color: red;  <br />
+                                }  <br /> <br/>
+
+                            &lt;!-- The CSS Universal Selector :-  --&gt; <br />
+                                * { <br />
+                                    &emsp;text-align: center;  <br />
+                                    &emsp;color: yellow;  <br />
+                                }  <br /> <br/>
+
+                            &lt;!-- The CSS Grouping Selector :-  --&gt; <br />
+                                h1, h2, p { <br />
+                                    &emsp;text-align: center;  <br />
+                                    &emsp;color: green;  <br />
+                                }  <br /> <br/>
+
+                        &lt;/style&gt; <br /> 
+
+                        &lt;head&gt; <br /> <br />
+
+
+                        &lt;body&gt; <br /> <br />
+                            &lt;!-- The CSS element Selector :-  --&gt; <br />
+                                &emsp; &lt;p&gt;
+                                Every paragraph will be affected by the style.
+                                &lt;/p&gt; <br />
+
+                                &emsp; &lt;p id="para1"&gt;
+                                    Me too!
+                                &lt;/p&gt; <br />
+
+                                &emsp; &lt;p&gt;
+                                    And me!
+                                &lt;/p&gt; <br /> <br />
+
+
+                            &lt;!-- The CSS id Selector :-  --&gt; <br />
+                                &emsp; &lt;p id="para1"&gt;
+                                    Hello World!
+                                &lt;/p&gt; <br />
+
+                                &emsp; &lt;p&gt;
+                                    This paragraph is not affected by the style.
+                                &lt;/p&gt; <br /> <br />
+
+                            
+                            &lt;!-- The CSS class Selector :-  --&gt; <br />
+                                &emsp; &lt;h1 class="center"&gt;
+                                    Red and center-aligned heading.
+                                &lt;/h1&gt; <br />
+
+                                &emsp; &lt;p class="center"&gt;
+                                    Red and center-aligned paragraph.
+                                &lt;p&gt; <br /> <br />
+
+                            
+                            &lt;!-- The CSS Universal Selector :-  --&gt; <br />
+                                &emsp; &lt;h1&gt;
+                                    Hello world!
+                                &lt;/h1&gt; <br />
+
+                                &emsp; &lt;p&gt;
+                                    Every element on the page will be affected by the style.
+                                &lt;p&gt; <br /> 
+
+                                &emsp; &lt;p id="para1"&gt;
+                                    Me too!
+                                &lt;p&gt; <br />
+
+                                &emsp; &lt;p&gt;
+                                    And me!
+                                &lt;p&gt; <br /> <br />
+
+                            &lt;!-- The CSS id Grouping :-  --&gt; <br />
+                                &emsp; &lt;h1&gt;
+                                    Hello World!
+                                &lt;/h1&gt; <br />
+
+                                &emsp; &lt;h2&gt;
+                                    Smaller heading!
+                                &lt;/h2&gt; <br />
+
+                                &emsp; &lt;p&gt;
+                                    This is paragraph.
+                                &lt;/p&gt; <br /> <br />
+
+                        &lt;/body&gt; <br />
+                        &lt;/html&gt; <br />
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="section4" id="point4">
+                <br/><h3>CSS Comments :</h3>
+                <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+                <p>Comments are ignored by browsers.</p>
+                <p>A CSS comment is placed inside the &it;style&gt; element, and starts with  /*  and ends with */.</p>
+                <p>You can also add comments to your HTML source by using the &lt;!--...--&gt;syntax.</p>
+
+                <h4>Example :-</h4><br />
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        &lt;!DOCTYPE html&gt; <br />
+                        &lt;html&gt; <br />
+                        &lt;head&gt; <br />
+                        &lt;style&gt; <br />
+
+                        p { <br />
+                            &emsp;color: red; <br />
+                            &emsp;/* Set text color to red */ 
+                        } <br />
+
+                        &lt;/style&gt; <br /> 
+                        &lt;head&gt; <br /> <br />
+
+                        &lt;body&gt; <br /> 
+                            &emsp; &lt;h2&gt;
+                                My Heading
+                            &lt;/h2&gt; <br />
+
+                            &emsp; &lt;!-- These paragraphs will be red. --&gt; <br/>
+
+                            &emsp; &lt;p&gt;
+                                Hello World!
+                            &lt;/p&gt; <br />
+
+                            &emsp; &lt;p&gt;
+                                This paragraph is styled with CSS.
+                            &lt;/p&gt; <br />
+
+                            &emsp; &lt;p&gt;
+                                HTML and CSS comments are not shown in the output.
+                            &lt;/p&gt; <br />
+
+                        &lt;/body&gt; <br />
+                        &lt;/html&gt; <br />
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Topic 5 -->
+            <div class="section5" id="point5">
+                <br/><h3>CSS Padding :</h3>
+                <p>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+                <p>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</p><br/>
+               
+                <h4>Padding - Individual Sides</h4> 
+                <ul>
+                    CSS has properties for specifying the padding for each side of an element:
+
+                    <li><span>padding-top</span></li>
+                    <li><span>padding-right</span></li>
+                    <li><span>padding-bottom</span></li>
+                    <li><span>padding-left</span></li>
+                    <br/>
+
+                    All the padding properties can have the following values:
+
+                    <li><span>length - specifies a padding in px, pt, cm, etc.</span></li>
+                    <li><span>% - specifies a padding in % of the width of the containing element.</span></li>
+                    <li><span>inherit - specifies that the padding should be inherited from the parent element.</span></li>
+                </ul>
+
+                <p><b>Note: </b>Negative values are not allowed. </p> <br/> <br/>
+
+                <h4>Padding - Individual Sides</h4> 
+                <p>To shorten the code, it is possible to specify all the padding properties in one property.</p>
+            
+                <ul>
+                    The padding property is a shorthand property for the following individual padding properties:
+                    <li><span>padding-top</span></li>
+                    <li><span>padding-right</span></li>
+                    <li><span>padding-bottom</span></li>
+                    <li><span>padding-left</span></li>
+                    <br/>
+                    So, here is how it works:
+                </ul>
+
+                <h4>Example :-</h4><br />
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        &lt;!DOCTYPE html&gt; <br />
+                        &lt;html&gt; <br />
+                        &lt;head&gt; <br />
+                        &lt;style&gt; <br />
+
+                        div { <br />
+                            &emsp;border: 1px solid black; <br />
+                            &emsp;background-color: lightblue; <br />
+                            &emsp;padding-top: 50px; <br />
+                            &emsp;padding-right: 30px; <br />
+                            &emsp;padding-bottom: 50px; <br />
+                            &emsp;padding-left: 80px; <br />
+                        } <br /> <br />
+
+                        #padding { <br />
+                            &emsp;border: 1px solid black; <br />
+                            &emsp;padding: 25px 50px 75px 100px; <br />
+                            &emsp;background-color: lightblue; <br />
+                          } <br /> <br />
+
+                        &lt;/style&gt; <br /> 
+                        &lt;head&gt; <br /> <br />
+
+                        &lt;body&gt; <br /> 
+                            &emsp; &lt;h2&gt;
+                                Using individual padding properties.
+                            &lt;/h2&gt; <br /> <br />
+
+                            &emsp; &lt;div&gt;
+                                This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.
+                            &lt;/div&gt; <br /> <br />
+
+                            &emsp; &lt;div id = "padding"&gt;
+                                This div element has a top padding of 25px, a right padding of 50px, a bottom padding of 75px, and a left padding of 100px.
+                            &lt;/div&gt; <br /> <br />
+
+                        &lt;/body&gt; <br />
+                        &lt;/html&gt; <br />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

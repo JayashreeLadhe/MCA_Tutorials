@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java_Tutorials</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css_files/style.css">
+
+    <link rel="stylesheet" href="css_files/HTML.css">
+
+    <!-- icons style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- fa fa-caret-right  -->
+
+    <!-- Bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- SIDEBAR INFORMATION -->
+        <div class="sidenav">
+            <!-- Home -->
+            <div class="dropdown"><a href="index.html"><i class="fa fa-home" ></i> Home </a> </div>
+            <!-- <div class="mianTag"><a href="index.html"><i class="fa fa-home"></i> Home </a></div> -->
+            
+            
+            <!-- HTML -->
+            <button class="dropdown-btn"><i class="fa fa-html5"></i> HTML
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="HTML.html">Learnig</a>
+                <a href="HTML_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- CSS -->
+            <button class="dropdown-btn"><i class="fab fa-css3"></i> CSS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="CSS.html">Learnig</a>
+                <a href="CSS_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- PHP -->
+            <button class="dropdown-btn"><i class='fab fa-java'></i> JAVA 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="Java.html">Learnig</a>
+                <a href="Lang_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- Bootstrap -->
+            <button class="dropdown-btn"><i class="fa-brands fa-bootstrap"></i> Bootstrap 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="bootstrap.html">Learnig</a>
+                <a href="Bootstrap_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- script File -->
+            <script src="index.js"></script>
+
+        </div>
+        <!-- Java - Right side SIDEBAR -->
+        <div class="rightSidenav">
+            <header>
+                <h2>Java Tutorial</h2>
+            </header>
+
+            <div class="sub-point">
+
+                <a href="#point1" class="btn">1. Introduction </a> <br />
+                <a href="#point2" class="btn">2. Installation </a> <br />
+                <a href="#point3" class="btn">3. Syntax </a> <br />
+                <a href="#point4" class="btn">4. Print Text </a> <br />
+                <a href="#point5" class="btn">5. Comments</a> <br />
+
+                <!-- </ul> -->
+            </div>
+
+        </div>
+
+        <div class="main-html">
+            <marquee>
+                <h1> Learn Java </h1>
+            </marquee>
+
+            <!-- Topic 1 -->
+            <div class="section1" id="point1">
+                <h3> Introduction : </h3>
+                <h4> What is Java? </h4>
+                <p>Java is a popular programming language, created in 1995.</p>
+                <p>It is owned by Oracle, and more than 3 billion devices run Java.</p>
+
+                <ul>
+                    It is used for:
+                    <li><span>Mobile applications (specially Android apps)</span></li>
+                    <li><span>Desktop applications</span></li>
+                    <li><span>Web applications</span></li>
+                    <li><span>Web servers and application servers</span></li>
+                    <li><span>Games</span></li>
+                    <li><span>Database connection</span></li>
+                    <li><span>And much, much more!</span></li>
+                </ul>
+            </div>
+                
+            <!-- Topic 2 -->
+            <div class="section2" id="point2">
+                <h3> Java Install : </h3>
+                <p>Some PCs might have Java already installed.</p>
+                <p>To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):</p>
+
+                <h4>Example :-</h4><br />
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        C:\Users\Your Name>java -version
+                    </div>
+                </div>
+
+                <p>If Java is installed, you will see something like this (depending on version):</p>
+
+                <h4>Example :-</h4><br />
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        java version "11.0.1" 2018-10-16 LTS <br />
+                        Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS) <br />
+                        Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="section3" id="point3">
+                <h3> Java Syntax :</h3>
+                <p>In Java, every application begins with a class name, and that class must match the filename.</p>
+                <p>Let's create our first Java file, called Main.java, which can be done in any text editor (like Notepad).</p>
+                <p>The file should contain a "Hello World" message, which is written with the following code:</p>
+
+                <h4>Example :-</h4><br />
+                <h5>&emsp;&emsp;main.java</h5>
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        public class Main { <br />
+                            &emsp;public static void main(String[] args) { <br />
+                                &emsp;&emsp;System.out.println("Hello World"); <br />
+                              &emsp;} <br />
+                          }
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="section4" id="point4">
+                <h3>Java Output / Print</h3>
+                <h4>Print Text</h4>
+                <p>You learned from the previous chapter that you can use the println() method to output values or print text in Java:</p>
+
+                <h4>Double Quotes</h4>
+                <p>When you are working with text, it must be wrapped inside double quotations marks "".</p>
+                <p>If you forget the double quotes, an error occurs:</p>
+
+                <h4>The Print() Method</h4>
+                <p>There is also a print() method, which is similar to println().</p>
+
+                <h4>Example :-</h4><br />
+                <h5>&emsp;&emsp;main.java</h5>
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        public class Main { <br />
+                                &emsp;&emsp;System.out.println("Hello World"); <br />
+                                &emsp;&emsp;System.out.println("I am learning Java."); <br />
+                                &emsp;&emsp;System.out.print("It is awesome!"); <br />
+                              &emsp;} <br />
+                          }
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 5 -->
+            <div class="section5" id="point5">
+                <h3>Java Comments :</h3>
+                <p>Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code.</p>
+
+                <h4>Single-line Comments</h4>
+                <p>Single-line comments start with two forward slashes (//).</p>
+                <p>Any text between // and the end of the line is ignored by Java (will not be executed).</p>
+                <p>This example uses a single-line comment before a line of code:</p>
+
+                <h4>Example :-</h4><br />
+                <h5>&emsp;&emsp;main.java</h5>
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        public class Main { <br />
+                            &emsp;public static void main(String[] args) { <br />
+                                &emsp;&emsp;// This is a comment <br />
+                                &emsp;&emsp;System.out.println("Hello World"); <br />
+                              &emsp;} <br />
+                          }
+                    </div>
+                </div>
+
+                <h4>Java Multi-line Comments</h4>
+                <p>Multi-line comments start with /* and ends with */.</p>
+                <p>Any text between /* and */ will be ignored by Java.</p>
+                <p>This example uses a multi-line comment (a comment block) to explain the code:</p>
+
+                <h4>Example :-</h4><br />
+                <h5>&emsp;&emsp;main.java</h5>
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        public class Main { <br />
+                            &emsp;public static void main(String[] args) { <br />
+                                &emsp;&emsp; /* The code below will print the words Hello World
+                                to the screen, and it is amazing */<br />
+                                &emsp;&emsp;System.out.println("Hello World"); <br />
+                              &emsp;} <br />
+                          }
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

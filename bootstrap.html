@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_Tutorials</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css_files/style.css">
+
+    <link rel="stylesheet" href="css_files/HTML.css">
+
+    <!-- icons style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- fa fa-caret-right  -->
+
+    <!-- Bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- SIDEBAR INFORMATION -->
+        <div class="sidenav">
+            <!-- Home -->
+            <div class="dropdown"><a href="index.html"><i class="fa fa-home" ></i> Home </a> </div>
+            <!-- <div class="mianTag"><a href="index.html"><i class="fa fa-home"></i> Home </a></div> -->
+            
+            
+            <!-- HTML -->
+            <button class="dropdown-btn"><i class="fa fa-html5"></i> HTML
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="HTML.html">Learnig</a>
+                <a href="HTML_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- CSS -->
+            <button class="dropdown-btn"><i class="fab fa-css3"></i> CSS 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="CSS.html">Learnig</a>
+                <a href="CSS_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- PHP -->
+            <button class="dropdown-btn"><i class='fab fa-java'></i> JAVA 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="Java.html">Learnig</a>
+                <a href="Lang_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- Bootstrap -->
+            <button class="dropdown-btn"><i class="fa-brands fa-bootstrap"></i> Bootstrap 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="bootstrap.html">Learnig</a>
+                <a href="Bootstrap_compiler.html">Practice</a>
+                <a href="#">Quizzes</a>
+            </div>
+
+            <!-- script File -->
+            <script src="index.js"></script>
+
+        </div>
+    
+        <!-- Bootstrap - Right side SIDEBAR -->
+        <div class="rightSidenav">
+            <header>
+                <h2>CSS Tutorial</h2>
+            </header>
+
+            <div class="sub-point">
+
+                <a href="#point1" class="btn">1. Introduction </a> <br />
+                <a href="#point2" class="btn">2. Containers </a> <br />
+                <a href="#point3" class="btn">3. Grid System </a> <br />
+                <a href="#point4" class="btn">4. Default Settings </a> <br />
+                <a href="#point5" class="btn">5. Colors </a> <br />
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="main-html">
+            <marquee>
+                <h1> Learn Bootstrap 5 </h1>
+            </marquee>
+
+            <!-- Topic 1 -->
+            <div class="section1" id="point1">
+                <h3> Introduction : </h3>
+                <h4> What is Bootstrap? </h4>
+
+                <ul>
+                    <li><span>Bootstrap is a free front-end framework for faster and easier web development.</span></li>
+                    <li><span>Bootstrap provides HTML and CSS-based design templates for Typography, Forms, Buttons, Tables, Navigation, Modals, Image Carousels and many more, with optional JavaScript plugins.</span></li>
+                    <li><span>Bootstrap also allows you to easily build responsive designs.</span></li>
+                </ul>
+
+                <h4>Example :-</h4><br />
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        &lt;!DOCTYPE html&gt; <br />
+                        &lt;html lang="en"&gt; <br />
+                        &lt;head&gt; <br />
+                        &lt;title&gt; 
+                            Bootstrap 5 Example
+                        &lt;/title&gt; <br /> 
+
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt; <br />
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" &gt; <br />
+
+                        &lt;/script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"&gt; <br /> 
+
+                        &lt;/script&gt; <br /> 
+
+                        &lt;head&gt; <br /> <br />
+
+                        &lt;body&gt; <br /> 
+                            &emsp; &lt;div class="container-fluid p-5 bg-primary text-white text-center"&gt; <br/>
+
+                            &emsp;&emsp;&lt;h1&gt; 
+                                My First Bootstrap Example
+                            &lt;/h1&gt; <br />
+
+                            &emsp;&emsp; &lt;p&gt;
+                                Resize this responsive page to see the effect!
+                            &lt;/p&gt; <br />
+                            &lt;/div&gt; <br />
+
+                            &lt;div class="container mt-5"&gt; <br /> 
+                            &emsp;&lt;div class="row"&gt; <br /> 
+                            &emsp;&emsp;&lt;div class="col-sm-4"&gt; <br /> 
+
+                            &emsp;&emsp;&emsp; &lt;h3&gt;
+                                Column 1
+                            &lt;/h3&gt; <br />
+                            &emsp;&emsp;&emsp; &lt;p&gt;
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                            &lt;/p&gt; <br />
+                            &emsp;&emsp;&emsp; &lt;p&gt;
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                            &lt;/p&gt; <br />
+                            &lt;/div&gt; <br />
+
+                            &emsp;&emsp;&lt;div class="col-sm-4"&gt; <br /> 
+                            &emsp;&emsp;&emsp; &lt;h3&gt;
+                                Column 2
+                            &lt;/h3&gt; <br />
+                            &emsp;&emsp;&emsp; &lt;p&gt;
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                            &lt;/p&gt; <br />
+                            &emsp;&emsp;&emsp; &lt;p&gt;
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                            &lt;/p&gt; <br />
+                            &lt;/div&gt; <br />
+                            
+
+                            &emsp;&emsp;&lt;div class="col-sm-4"&gt; <br /> 
+                            &emsp;&emsp;&emsp; &lt;h3&gt;
+                                Column 3
+                            &lt;/h3&gt; <br />
+                            &emsp;&emsp;&emsp; &lt;p&gt;
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                            &lt;/p&gt; <br />
+                            &emsp;&emsp;&emsp; &lt;p&gt;
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                            &lt;/p&gt; <br />
+                            &emsp;&emsp;&lt;/div&gt; <br />
+                            &emsp;&lt;/div&gt; <br />
+                            &lt;/div&gt; <br />
+
+                            
+                        &lt;/body&gt; <br />
+                        &lt;/html&gt; <br />
+                    </div>
+                </div>
+
+                <br/>
+                <h4>Bootstrap Versions</h4>
+                <p>Bootstrap 5 (released 2021) is the newest version of Bootstrap (released 2013); with new components, faster stylesheet and more responsiveness.</p>
+
+                <p>Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.</p>
+
+                <p>&lt;The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to vanilla JavaScript instead of jQuery.&gt; </p>
+            </div>
+
+
+            <!-- Topic 2 -->
+            <div class="section2" id="point2">
+                <h3>Bootstrap 5 Containers</h3>
+                <p>You learned from the previous chapter that Bootstrap requires a containing element to wrap site contents.</p>
+                <p>Containers are used to pad the content inside of them, and there are two container classes available:</p>
+
+                <p>&emsp;1. The .container class provides a responsive fixed width container</p>
+                <p>&emsp;2. The .container-fluid class provides a full width container, spanning the entire width of the viewport</p><br/><br/>
+
+                <h4>Fixed Container</h4>
+                <p>Use the .container class to create a responsive, fixed-width container.</p>
+                <h4>Fluid Container</h4>
+                <p>Use the .container-fluid class to create a full width container, that will always span the entire width of the screen (width is always 100%):</p>
+
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        &lt;!DOCTYPE html&gt; <br />
+                        &lt;html lang="en"&gt; <br />
+                        &lt;head&gt; <br />
+                        &lt;title&gt; 
+                            Bootstrap 5 Example
+                        &lt;/title&gt; <br /> 
+
+                        &lt;meta charset="utf-8"&gt; <br />
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt; <br />
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" &gt; <br />
+
+                        &lt;/script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"&gt; <br /> 
+
+                        &lt;/script&gt; <br /> 
+
+                        &lt;head&gt; <br /> <br />
+
+                        &lt;body&gt; <br /> 
+                            &emsp; &lt;div class="container"&gt; <br/>
+
+                            &emsp;&emsp;&lt;h1&gt; 
+                                My First Bootstrap Page
+                            &lt;/h1&gt; <br />
+
+                            &emsp;&emsp; &lt;p&gt;
+                                This part is inside a .container class.
+                            &lt;/p&gt; <br />
+                            &emsp;&emsp; &lt;p&gt;
+                                The .container class provides a responsive fixed width container.
+                            &lt;/p&gt; <br />
+                            &emsp;&emsp; &lt;p&gt;
+                                Resize the browser window to see that the container width will change at different breakpoints.
+                            &lt;/p&gt; <br />
+                            &lt;/div&gt; <br />
+
+
+                            &emsp; &lt;div class="container-fluid"&gt; <br/>
+
+                            &emsp;&emsp;&lt;h1&gt; 
+                                My First Bootstrap Page
+                            &lt;/h1&gt; <br />
+
+                            &emsp;&emsp; &lt;p&gt;
+                                This part is inside a ..container-fluid class.
+                            &lt;/p&gt; <br />
+                            &emsp;&emsp; &lt;p&gt;
+                                The .container-fluid class provides a full width container, spanning the entire width of the viewport.
+                            &lt;/p&gt; <br />
+                            &lt;/div&gt; <br />
+
+                            
+                        &lt;/body&gt; <br />
+                        &lt;/html&gt; <br />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="section3" id="point3">
+                <h3>Bootstrap 5 Grid System</h3>
+                <p>Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page.</p>
+                <p>If you do not want to use all 12 columns individually, you can group the columns together to create wider columns:</p>
+                <p>The grid system is responsive, and the columns will re-arrange automatically depending on the screen size.</p>
+                <p>Make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available columns).</p> <br/>
+
+                <h4>Grid Classes</h4>
+                <ul>
+                    The Bootstrap 5 grid system has six classes:
+                    <li><span>.col- (extra small devices - screen width less than 576px)</span></li>
+                    <li><span>.col-sm- (small devices - screen width equal to or greater than 576px)</span></li>
+                    <li><span>.col-md- (medium devices - screen width equal to or greater than 768px)</span></li>
+                    <li><span>.col-lg- (large devices - screen width equal to or greater than 992px)</span></li>
+                    <li><span>.col-xl- (xlarge devices - screen width equal to or greater than 1200px)</span></li>
+                    <li><span>.col-xxl- (xxlarge devices - screen width equal to or greater than 1400px)</span></li>
+                    The classes above can be combined to create more dynamic and flexible layouts.
+                </ul>
+
+                <h4>Basic Structure of a Bootstrap 5 Grid</h4>
+                <p>The following is a basic structure of a Bootstrap 5 grid:</p>
+
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        &lt;!--Control the column width, and how they should appear on different devices--&gt; <br />
+                        &lt;div class="row"&gt; <br />
+                        &emsp;&lt;div class="col-*-*"&gt; &lt;/ div&gt; <br />
+                        &emsp;&lt;div class="col-*-*"&gt; &lt;/div&gt; <br />
+                        &lt;/div&gt; <br /> <br />
+
+                        &lt;div class="row"&gt; <br />
+                        &emsp;&lt;div class="col-*-*"&gt; &lt;/ div&gt; <br />
+                        &emsp;&lt;div class="col-*-*"&gt; &lt;/div&gt; <br />
+                        &emsp;&lt;div class="col-*-*"&gt; &lt;/div&gt; <br />
+                        &lt;/div&gt; <br /> <br />
+
+
+                        &lt;!--Or let Bootstrap automatically handle the layout--&gt; <br />
+                        &lt;div class="row"&gt; <br />
+                        &emsp;&lt;div class="col"&gt; &lt;/ div&gt; <br />
+                        &emsp;&lt;div class="col"&gt; &lt;/div&gt; <br />
+                        &emsp;&lt;div class="col"&gt; &lt;/div&gt; <br />
+                        &lt;/div&gt; <br /> 
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="section4" id="point4">
+                <h3>Bootstrap 5 Default Settings
+                </h3>
+                <p>Bootstrap 5 uses a default font-size of 1rem (16px by default), and its line-height is 1.5.</p>
+                <p>In addition, all &lt;p&gt; elements have margin-top: 0 and margin-bottom: 1rem (16px by default).</p>
+                <h1>&lt;h1&gt;-&lt;h6&gt;</h1>
+                <p>Bootstrap 5 styles HTML headings (&lt;h1&gt; to &lt;h6&gt;)  with a bolder font-weight and a responsive font-size.</p>
+
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        &lt;!DOCTYPE html&gt; <br />
+                        &lt;html lang="en"&gt; <br />
+                        &lt;head&gt; <br />
+                        &lt;title&gt; 
+                            Bootstrap 5 Example
+                        &lt;/title&gt; <br /> 
+
+                        &lt;meta charset="utf-8"&gt; <br />
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt; <br />
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" &gt; <br />
+
+                        &lt;/script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"&gt; <br /> 
+
+                        &lt;/script&gt; <br /> 
+
+                        &lt;head&gt; <br /> <br />
+
+                        &lt;body&gt; <br /> 
+                            &emsp; &lt;div class="container mt-3"&gt; <br/>
+
+                            &emsp;&emsp; &lt;p&gt;
+                                The font-size of each Bootstrap heading depends on the screen size. Try to resize the browser window to see the effect.
+                            &lt;/p&gt; <br />
+                           
+                            &emsp;&emsp;&lt;h1&gt; 
+                                h1 Bootstrap heading
+                            &lt;/h1&gt; <br />
+
+                            &emsp;&emsp;&lt;h2&gt; 
+                                h2 Bootstrap heading
+                            &lt;/h2&gt; <br />
+                            
+                            &emsp;&emsp;&lt;h3&gt; 
+                                h3 Bootstrap heading
+                            &lt;/h3&gt; <br />
+
+                            &emsp;&emsp;&lt;h4&gt; 
+                                h4 Bootstrap heading
+                            &lt;/h4&gt; <br />
+
+                            &emsp;&emsp;&lt;h5&gt; 
+                                h5 Bootstrap heading
+                            &lt;/h5&gt; <br />
+
+                            &emsp;&emsp;&lt;h6&gt; 
+                                h6 Bootstrap heading
+                            &lt;/h6&gt; <br />
+
+                            &emsp;&lt;/div&gt; <br />
+
+                            
+                        &lt;/body&gt; <br />
+                        &lt;/html&gt; <br />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 5 -->
+            <div class="section5" id="point5">
+                <h3>Bootstrap 5 Colors</h3>
+                <h4>Text Colors</h4>
+                <p>Bootstrap 5 has some contextual classes that can be used to provide "meaning through colors".</p>
+                <p>The classes for text colors are: .text-muted, .text-primary, .text-success, .text-info, .text-warning, .text-danger, .text-secondary, .text-white, .text-dark, .text-body (default body color/often black) and .text-light:</p> 
+
+
+                <div class="codeBox">
+                    <h4>Code :-</h4> <br />
+                    <div class="code">
+                        &lt;!DOCTYPE html&gt; <br />
+                        &lt;html lang="en"&gt; <br />
+                        &lt;head&gt; <br />
+                        &lt;title&gt; 
+                            Bootstrap 5 Example
+                        &lt;/title&gt; <br /> 
+
+                        &lt;meta charset="utf-8"&gt; <br />
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1" &gt; <br />
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" &gt; <br />
+
+                        &lt;/script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"&gt; <br /> 
+
+                        &lt;/script&gt; <br /> 
+
+                        &lt;head&gt; <br /> <br />
+
+                        &lt;body&gt; <br /> 
+                            &emsp; &lt;div class="container mt-3"&gt; <br/>
+
+                            &emsp;&emsp;&lt;h2&gt; 
+                                Contextual Colors
+                            &lt;/h2&gt; <br />
+
+                            &emsp;&emsp; &lt;p&gt;
+                                Use the contextual classes to provide "meaning through colors":
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-muted"&gt; 
+                                This text is muted.
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-primary"&gt; 
+                                This text is important.
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-success"&gt; 
+                                This text indicates success.
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-info"&gt; 
+                                This text represents some information.
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-warning"&gt; 
+                                This text represents a warning.
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-danger"&gt; 
+                                This text represents danger.
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-secondary"&gt; 
+                                Secondary text.
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-dark"&gt; 
+                                This text is dark grey.
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-body"&gt; 
+                                Default body color (often black).
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-light"&gt; 
+                                This text is light grey (on white background).
+                            &lt;/p&gt; <br />
+
+                            &emsp;&emsp;&lt;p class="text-white"&gt; 
+                                This text is white (on white background).
+                            &lt;/p&gt; <br />
+                           
+                           
+                            &emsp;&lt;/div&gt; <br />
+
+                            
+                        &lt;/body&gt; <br />
+                        &lt;/html&gt; <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
